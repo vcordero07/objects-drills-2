@@ -1,3 +1,13 @@
+// Enroll in summer school
+// Take up to 10 minutes to write a function called enrollInSummerSchool that
+// takes a single argument, students. students is an array of objects, with
+// each object representing a student — for example, {name: 'Tim', status:
+// 'Current student', course: 'Biology'}.
+//
+// enrollInSummerSchool should return an array of objects. For each object from
+// the original array, it should return the original name and course, but
+// should update the status to In Summer school.
+ 
 var studentData = [
   {
     name: 'Tim',

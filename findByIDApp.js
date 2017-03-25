@@ -1,3 +1,11 @@
+// Find by id
+// Spend up to 15 minutes writing a function called findById. This function takes
+// two arguments items and idNum. items is an array of objects. idNum is the id
+// we're trying to find in items.
+//
+// Calling findById([{id: 1, foo: 'bar'}, {id: 2, foo: 'bizz'}], 2) should
+// return {id: 2, foo: 'bizz'}.
+
 // you can pass in `scratchData` to test out `findByid`
 // your function
 var scratchData = [
