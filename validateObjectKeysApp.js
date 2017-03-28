@@ -62,16 +62,29 @@ var expectedKeys = ['id', 'name', 'age', 'city'];
 //     return true;
 // }
 
+// function validateKeys(object, expectedKeys) {
+//     if (Object.keys(object).length !== expectedKeys.length) {
+//         return false;
+//     }
+//     //why can I use this????
+//     for (let i = 0; i < expectedKeys.length; i++) {
+//         return (!Object.keys(object).find(key => {})) ? key === expectedKeys[i] : false;
+//     }
+//     return true;
+// }
+
+
 function validateKeys(object, expectedKeys) {
     if (Object.keys(object).length !== expectedKeys.length) {
         return false;
     }
-    //why can I use this????
-    for (let i = 0; i < expectedKeys.length; i++) {
-        return (!Object.keys(object).find(key => {})) ? key === expectedKeys[i] : false;
-    }
-    return true;
+    //loops thru the array if the supply function return a thruthy value for every iteration it will return true
+    //if any iteration return a falsy value then .every will return a false
+ return expectedKeys.every((el) => object[el]);
+
+    ``
 }
+
 
 /* From here down, you are not expected to
    understand.... for now :)

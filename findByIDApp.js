@@ -34,21 +34,53 @@ var scratchData = [
 // }
 
 
+// //why can I do this? becasue the return is inside of the loop? if I put outside is out of the scope.
+// function findById(items, idNum) {
+//  // your code here
+//   for (let i = 0; i < items.length; i++) {
+// //     if (items[i].id === idNum) {
+// //       console.log(items[i]);
+// //       return items[i];
+// //     }
+//
+//     return items[i].id === idNum ? items[i] : false;
+//
+//
+//
+//   }
+// }
+
 //why can I do this? becasue the return is inside of the loop? if I put outside is out of the scope.
 function findById(items, idNum) {
  // your code here
-  for (let i = 0; i < items.length; i++) {
+
+  //.find return the first match of any data type or undefined
+   return foundItems = items.find(el => el.id === idNum ? true : false) || {error: "No Item found"};
+
+  //.filter return an array of all matching items
+  // console.log(items.filter(el => el.id === idNum ? true : false).length);
+   // return foundItems = items.filter(el => el.id === idNum ? true : false)[0] || {error: "No Item found"};
+
+
+//   for (let i = 0; i < items.length; i++) {
+    //console.log(items[i]);
+
+    //console.log(items[i].id === idNum ? items[i] : false);
+
 //     if (items[i].id === idNum) {
+//       console.log(items);
 //       console.log(items[i]);
 //       return items[i];
+
+//
+
+//   }
+//   return {
+//     error: "undefined"
 //     }
-
-    return items[i].id === idNum ? items[i] : false;
-
-
-
-  }
 }
+
+
 
 
 
